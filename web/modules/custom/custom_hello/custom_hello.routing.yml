@@ -1,0 +1,7 @@
+custom_hello.hello:
+  path: '/custom-hello'
+  defaults:
+    _controller: 'Drupal\custom_hello\Controller\HelloController::content'
+    _title: 'Custom Hello'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+name: 'Custom Hello'
+type: module
+description: 'Un módulo simple para Drupal que muestra un mensaje de bienvenida.'
+core_version_requirement: ^10
+package: Custom
+dependencies: []
