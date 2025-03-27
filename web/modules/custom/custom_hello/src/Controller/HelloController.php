@@ -5,16 +5,18 @@ namespace Drupal\custom_hello\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Class for hello controller.
+ * Class HelloController.
+ *
+ * Provides a Hello World message.
  */
 class HelloController extends ControllerBase {
 
   /**
-   * Function of content.
+   * Returns a render-able array for a test page.
    */
   public function content() {
     return [
-      '#markup' => $this->t('¡Hola desde el módulo Custom Hello!'),
+      '#markup' => '¡Hola desde el módulo Custom Hello!',
     ];
   }
 

@@ -1,0 +1,14 @@
+
+##teamcity[testCount count='1' flowId='9692']
+
+##teamcity[testSuiteStarted name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='9692']
+
+##teamcity[testSuiteStarted name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='9692']
+
+##teamcity[testStarted name='testContent' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest::testContent' flowId='9692']
+
+##teamcity[testFinished name='testContent' duration='6' flowId='9692']
+
+##teamcity[testSuiteFinished name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='9692']
+
+##teamcity[testSuiteFinished name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='9692']

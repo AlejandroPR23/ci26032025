@@ -26,6 +26,11 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
+    "autoload": {
+    "psr-4": {
+        "Drupal\\custom_hello\\": "web/modules/custom/custom_hello/src/"
+        }
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
