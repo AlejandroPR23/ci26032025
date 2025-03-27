@@ -31,7 +31,7 @@ jobs:
 
       - name: Ejecutar PHPUnit
         run: |
-          ./vendor/bin/phpunit --testsuite=unit
+          ./vendor/bin/phpunit  web/modules/custom/custom_hello/tests/src/Unit
 
       - name: Revisar logs de Drupal
         run: fin drush watchdog-show
