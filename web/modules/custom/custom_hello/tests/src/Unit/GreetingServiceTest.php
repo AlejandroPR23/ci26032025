@@ -6,12 +6,12 @@ use Drupal\custom_hello\Service\GreetingService;
 use PHPUnit\Framework\TestCase;
 
 /**
- *
+ * Greeting Service Test.
  */
 class GreetingServiceTest extends TestCase {
 
   /**
-   *
+   * Test GetGreeting.
    */
   public function testGetGreeting() {
     $service = new GreetingService();

@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\custom_hello\Service\GreetingService;
 
 /**
- *
+ * Hello Form Class.
  */
 class HelloForm extends FormBase {
   protected $messenger;
@@ -31,14 +31,14 @@ class HelloForm extends FormBase {
   }
 
   /**
-   *
+   * Get form id.
    */
   public function getFormId() {
     return 'custom_hello_form';
   }
 
   /**
-   *
+   * Build the form.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['name'] = [
@@ -56,7 +56,7 @@ class HelloForm extends FormBase {
   }
 
   /**
-   *
+   * Submit the form.
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $name = $form_state->getValue('name');
