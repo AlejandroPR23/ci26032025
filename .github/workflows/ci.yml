@@ -32,10 +32,3 @@ jobs:
       - name: Ejecutar PHPUnit
         run: |
           ./vendor/bin/phpunit web/modules/custom/custom_hello/tests/src/Unit
-
-      - name: Install fin
-        run: |
-          curl -fsSL https://get.docksal.io | sh
-
-      - name: Revisar logs de Drupal
-        run: fin drush watchdog-show

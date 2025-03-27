@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Drupal\\Tests\\custom_hello\\Unit\\HelloControllerTest::testContent":0.006}}
+{"version":1,"defects":{"Drupal\\Tests\\custom_hello\\Unit\\GreetingServiceTest::testGetGreeting":4},"times":{"Drupal\\Tests\\custom_hello\\Unit\\HelloControllerTest::testContent":0,"Drupal\\Tests\\custom_hello\\Unit\\GreetingServiceTest::testGetGreeting":0.001}}

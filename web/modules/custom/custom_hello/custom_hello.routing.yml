@@ -5,3 +5,12 @@ custom_hello.hello:
     _title: 'Custom Hello'
   requirements:
     _permission: 'access content'
+
+custom_hello.form:
+  path: '/custom-hello-form'
+  defaults:
+    _form: 'Drupal\custom_hello\Form\HelloForm'
+    _title: 'Formulario de Saludo'
+  requirements:
+    _permission: 'access content'
+

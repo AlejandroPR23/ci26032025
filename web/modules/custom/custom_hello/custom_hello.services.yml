@@ -1,0 +1,3 @@
+services:
+  custom_hello.greeting_service:
+    class: 'Drupal\custom_hello\Service\GreetingService'
