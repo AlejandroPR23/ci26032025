@@ -27,11 +27,15 @@ jobs:
       - name: Validar estándares de código
         run: |
           composer require drupal/coder
-          ./vendor/bin/phpcs  --standard="Drupal,DrupalPractice" -n     --extensions="php,module,inc,install,test,profile,theme"     --ignore="*.features.*,*.pages*.inc"      web/modules/custom/
+          ./vendor/bin/phpcs --standard="Drupal,DrupalPractice" -n --extensions="php,module,inc,install,test,profile,theme" --ignore="*.features.*,*.pages*.inc" web/modules/custom/
 
       - name: Ejecutar PHPUnit
         run: |
-          ./vendor/bin/phpunit  web/modules/custom/custom_hello/tests/src/Unit
+          ./vendor/bin/phpunit web/modules/custom/custom_hello/tests/src/Unit
+
+      - name: Install fin
+        run: |
+          curl -fsSL https://get.docksal.io | sh
 
       - name: Revisar logs de Drupal
         run: fin drush watchdog-show
