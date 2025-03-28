@@ -42,9 +42,10 @@ jobs:
 
       - name: Agregar Bitbucket como remoto
         run: |
-          git remote add bitbucket https://te-17032025-admin:${{ secrets.BITBUCKET_PASSWORD }}@bitbucket.org/te-17032025/ci26032025.git
-          git fetch origin
-          git reset --hard origin/master  # Descarta cualquier cambio en Bitbucket
+            git remote add bitbucket https://te-17032025-admin:${{ secrets.BITBUCKET_PASSWORD }}@bitbucket.org/te-17032025/ci26032025.git
+            git fetch origin
+            git fetch --unshallow  # Convierte el repositorio en un clon completo
+            git reset --hard origin/master  # Descarta cualquier cambio en Bitbucket
          
 
 
