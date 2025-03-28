@@ -33,4 +33,21 @@ jobs:
         run: |
           ./vendor/bin/phpunit web/modules/custom/custom_hello/tests/src/Unit
 
+      - name: Configurar SSH
+        run: |
+            mkdir -p ~/.ssh
+            echo "${{ secrets.BITBUCKET_SSH_KEY }}" > ~/.ssh/id_rsa
+            chmod 600 ~/.ssh/id_rsa
+            ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+  
+      - name: Agregar Bitbucket como remoto
+        run: |
+                git remote set-url bitbucket https://te-17032025-admin:${{ secrets.BITBUCKET_PASSWORD }}@bitbucket.org/te-17032025/ci26032025.git
+                git fetch --all
+          
+  
+      - name: Hacer push a Bitbucket
+        run: |
+            git push bitbucket master
+
       
