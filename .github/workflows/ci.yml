@@ -43,8 +43,11 @@ jobs:
       - name: Agregar Bitbucket como remoto
         run: |
           git remote add bitbucket https://te-17032025-admin:${{ secrets.BITBUCKET_PASSWORD }}@bitbucket.org/te-17032025/ci26032025.git
-          git pull bitbucket master
+          git fetch origin
+          git reset --hard origin/master  # Descarta cualquier cambio en Bitbucket
+         
+
 
       - name: Hacer push a Bitbucket
         run: |
-          git push bitbucket master
+           git push --force bitbucket master  # Fuerza la actualización en Bitbucket
