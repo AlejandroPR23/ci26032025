@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="vendor/autoload.php" colors="true" verbose="true" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
-  <coverage>
+<!-- Archivo de configuración para PHPUnit siguiendo buenas prácticas -->
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    verbose="true"
+    stopOnFailure="false"
+>
+  <!-- Configuración de cobertura de código -->
+  <coverage processUncoveredFiles="true">
+    <!-- Incluir solo el directorio de módulos custom -->
     <include>
       <directory suffix=".php">web/modules/custom</directory>
     </include>
+    <!-- Excluir archivos o directorios que no se desean cubrir -->
+    <exclude>
+      <directory>vendor</directory>
+      <directory>tests</directory>
+    </exclude>
+    <!-- Reporte HTML adicional -->
+     <report>
+      <html outputDirectory="tests/logs/coverage-html"/>
+      <text outputFile="tests/logs/coverage.txt" showUncoveredFiles="true"/>
+    </report>
   </coverage>
+
+  <!-- Definición de suites de prueba -->
   <testsuites>
     <testsuite name="Unit">
       <directory>web/modules/custom/custom_hello/tests/src/Unit</directory>
     </testsuite>
+    <!-- Puedes agregar otros suites, por ejemplo, de integración -->
+    <!--
+    <testsuite name="Integration">
+      <directory>web/modules/custom/custom_hello/tests/src/Integration</directory>
+    </testsuite>
+    -->
   </testsuites>
+
+  <!-- Configuración de logs -->
   <logging>
     <junit outputFile="tests/logs/junit.xml"/>
     <teamcity outputFile="tests/logs/teamcity.log"/>
   </logging>
+
+  <!-- Configuración del ambiente PHP -->
   <php>
+    <!-- Configuración de directivas de PHP -->
+    <ini name="error_reporting" value="-1"/>
+    <ini name="date.timezone" value="UTC"/>
+    <!-- Variables de entorno necesarias para pruebas -->
     <env name="SIMULATION_MODE" value="true"/>
+    <!-- Puedes agregar más variables según tus necesidades -->
   </php>
 </phpunit>

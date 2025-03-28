@@ -1,22 +1,22 @@
 
-##teamcity[testCount count='2' flowId='3959']
+##teamcity[testCount count='2' flowId='2255']
 
-##teamcity[testSuiteStarted name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='3959']
+##teamcity[testSuiteStarted name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='2255']
 
-##teamcity[testSuiteStarted name='Drupal\Tests\custom_hello\Unit\GreetingServiceTest' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/GreetingServiceTest.php::\Drupal\Tests\custom_hello\Unit\GreetingServiceTest' flowId='3959']
+##teamcity[testSuiteStarted name='Drupal\Tests\custom_hello\Unit\GreetingServiceTest' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/GreetingServiceTest.php::\Drupal\Tests\custom_hello\Unit\GreetingServiceTest' flowId='2255']
 
-##teamcity[testStarted name='testGetGreeting' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/GreetingServiceTest.php::\Drupal\Tests\custom_hello\Unit\GreetingServiceTest::testGetGreeting' flowId='3959']
+##teamcity[testStarted name='testGetGreeting' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/GreetingServiceTest.php::\Drupal\Tests\custom_hello\Unit\GreetingServiceTest::testGetGreeting' flowId='2255']
 
-##teamcity[testFinished name='testGetGreeting' duration='5' flowId='3959']
+##teamcity[testFinished name='testGetGreeting' duration='16' flowId='2255']
 
-##teamcity[testSuiteFinished name='Drupal\Tests\custom_hello\Unit\GreetingServiceTest' flowId='3959']
+##teamcity[testSuiteFinished name='Drupal\Tests\custom_hello\Unit\GreetingServiceTest' flowId='2255']
 
-##teamcity[testSuiteStarted name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='3959']
+##teamcity[testSuiteStarted name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='2255']
 
-##teamcity[testStarted name='testContent' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest::testContent' flowId='3959']
+##teamcity[testStarted name='testContent' locationHint='php_qn:///var/www/web/modules/custom/custom_hello/tests/src/Unit/HelloControllerTest.php::\Drupal\Tests\custom_hello\Unit\HelloControllerTest::testContent' flowId='2255']
 
-##teamcity[testFinished name='testContent' duration='0' flowId='3959']
+##teamcity[testFinished name='testContent' duration='7' flowId='2255']
 
-##teamcity[testSuiteFinished name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='3959']
+##teamcity[testSuiteFinished name='Drupal\Tests\custom_hello\Unit\HelloControllerTest' flowId='2255']
 
-##teamcity[testSuiteFinished name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='3959']
+##teamcity[testSuiteFinished name='/var/www/web/modules/custom/custom_hello/tests/src/Unit' flowId='2255']
